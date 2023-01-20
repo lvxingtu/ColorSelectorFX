@@ -25,7 +25,7 @@ jobs:
         run: mkdir staging
 
       - name: Gluon Build
-        run: mvn  gluonfx:build gluonfx:package
+        run: mvn gluonfx:runagent gluonfx:build gluonfx:package
 
       - name: Copy native gluonfx to staging
         run: cp -r target/gluonfx/x86_64-windows/ColorSelectorFX staging
